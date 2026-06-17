@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans TC', 'sans-serif';
+    line-height: 1.6;
+    background-color: #040214;
+    color: rgb(246, 246, 246);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgb(3, 15, 66);
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-link{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.nav-link a:hover{
+    color: #38bdf8;
+}
+
+.btn-chat{
+    background-color: #38bdf8;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+.hero-content p{
+    font-size: 1rem;
+    color: darkgray;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px
+}
+
+button{
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary{
+    background-color: blue;
+    color:#1e293b
+}
+
+.btn-secondary{
+    background-color:darkgray;
+    color:white;
+}
+button:hover{opacity: 0.5;}
+
+.hero-image{
+    flex:1;
+    display: flex;
+
+}
+
+.hero-image img{
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px black;
+}
+
+.chat-box{
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#user-input{
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    background-color: black;
+    color: #f1f5f9;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s; 
+}
+
+#user-input:focus{
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 2px rgb(56, 189, 247, 0.2);
+}
+
+#ai-response{
+    font-size: 1.1rem;
+    color: #38bdf8;
+    font-weight: bold;
+    min-width: 1.6rem;
+}
+
+@media (max-width:800px){
+    .navbar{
+        padding: 15px 5%;
+    }
+
+    .nav-link{
+        display: none;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+    }
+
+    .hero-image{
+        margin-top: 40px;
+    }
+}
